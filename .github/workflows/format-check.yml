@@ -1,0 +1,47 @@
+name: Format Check
+
+on:
+  pull_request:
+    branches: [main, master, develop]
+  push:
+    branches: [main, master, develop]
+
+jobs:
+  format-check:
+    name: Check code formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        run: |
+          # フォーマット前のコードを一時保存
+          git ls-files '*.js' '*.jsx' '*.ts' '*.tsx' | xargs cat > before_format.txt
+
+          # フォーマット実行
+          npm run format
+
+          # フォーマット後のコードを一時保存
+          git ls-files '*.js' '*.jsx' '*.ts' '*.tsx' | xargs cat > after_format.txt
+
+          # 差分があるかチェック
+          if diff -q before_format.txt after_format.txt > /dev/null; then
+            echo "✅ All files are properly formatted!"
+            exit 0
+          else
+            echo "❌ Code formatting issues found. Please run 'npm run format' locally and commit the changes."
+            echo "Diff:"
+            git diff --exit-code
+            exit 1
+          fi

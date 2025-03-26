@@ -1,0 +1,167 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#EBF4FF',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  aiCard: {
+    backgroundColor: '#FFFFFF',
+    padding: 12,
+    borderRadius: 20,
+    marginBottom: 8,
+    marginRight: 10,
+    marginLeft: 10,
+    alignSelf: 'flex-start',
+    maxWidth: '85%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 1,
+    elevation: 1,
+  },
+  userCard: {
+    backgroundColor: '#4A86E8',
+    padding: 12,
+    borderRadius: 20,
+    marginBottom: 8,
+    marginLeft: 40,
+    marginRight: 10,
+    alignSelf: 'flex-end',
+    maxWidth: '85%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 1,
+    elevation: 1,
+  },
+  messageContent: {
+    color: '#000000',
+    fontSize: 16,
+  },
+  userMessageContent: {
+    color: '#FFFFFF',
+    fontSize: 16,
+  },
+  timestamp: {
+    fontSize: 10,
+    color: '#999',
+    marginTop: 4,
+    alignSelf: 'flex-end',
+  },
+  userTimestamp: {
+    fontSize: 10,
+    color: '#D1E5FF',
+    marginTop: 4,
+    alignSelf: 'flex-end',
+  },
+  errorText: {
+    color: 'red',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    padding: 10,
+    borderTopWidth: 1,
+    borderColor: '#D1E5FF',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+  },
+  textInput: {
+    flex: 1,
+    marginRight: 10,
+    borderWidth: 1,
+    borderColor: '#D1E5FF',
+    borderRadius: 20,
+    paddingHorizontal: 15,
+    height: 40,
+    backgroundColor: '#F5F9FF',
+  },
+  iconButton: {
+    padding: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  sendButton: {
+    backgroundColor: '#4A86E8',
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderRadius: 20,
+  },
+  sendButtonText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+  },
+  todoButton: {
+    backgroundColor: '#7986CB',
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderRadius: 20,
+  },
+  todoButtonText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+  },
+  buttonSpacer: {
+    width: 10,
+  },
+  todoDialogContainer: {
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 15,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  todoDialogTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 16,
+    textAlign: 'center',
+    color: '#4A86E8',
+  },
+  todoInput: {
+    borderWidth: 1,
+    borderColor: '#D1E5FF',
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginBottom: 12,
+    height: 40,
+  },
+  todoDialogButtonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 16,
+  },
+  modalButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 8,
+    borderRadius: 20,
+  },
+  cancelButton: {
+    backgroundColor: '#F2F2F2',
+  },
+  addButton: {
+    backgroundColor: '#4A86E8',
+  },
+  modalButtonText: {
+    fontWeight: 'bold',
+  },
+  chatContainer: {
+    flex: 1,
+    padding: 10,
+  },
+});
