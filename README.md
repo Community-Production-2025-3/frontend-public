@@ -1,3 +1,7 @@
+# デモ動画
+[デモ動画を見る](./個人開発プロジェクト「予定立てといたで？」デモ動画.mp4)
+[Youtube](https://youtube.com/shorts/xhm78ikoPEc?si=hjsDfj1BGHBpTKxf)
+
 # フロントエンドアプリケーション
 自分の予定をAIが作ってくれるアプリケーションです。
 
